@@ -1,0 +1,174 @@
+/* .topHeader {
+  background-color: #191919;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.profileContainer {
+  display: flex;
+}
+
+.profileContainer .name,
+.image {
+  padding: 5px;
+  color: #fff;
+}
+
+.sideNavWrapper {
+  background-color: #191919;
+  height: 100%;
+}
+
+.sideNavBtn,  .sideNavBtn>a {
+  padding: 10px;
+  margin: 10px !important;
+  color: #fff;
+}
+
+.sideNavBtn:hover,  .sideNavBtn:hover>a{
+  background-color: yellow;
+  color: #000;
+  border-radius: 5px;
+}
+
+.selectedNav {
+  background-color: yellow;
+  color: #000;
+  border-radius: 5px;
+}
+
+.sideNavBtn .active,
+.sideNavLink .active {
+  background-color: yellow;
+  color: #000;
+}
+
+.sideNavLink {
+  text-decoration: none;
+
+}
+
+.sideNavLink:hover {
+  text-decoration: none;
+  color: #000;
+} */
+
+
+.topHeader {
+    background-color: #fff;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-left: 6px;
+  }
+  
+  .profileContainer {
+    display: flex;
+  }
+  
+  .profileContainer .name,
+  .image {
+    padding: 5px;
+    color: #1a1a24;
+  }
+  /*changes layout added by sharif*/
+  .sideNavWrapper {
+    background-color: #1a1a24;
+    height: 100vh;
+    text-align: center;
+    border-right: 5px solid #ffe600;
+    position: fixed;
+  }
+  
+  .main-content {
+    margin-left: 3.6% !important;
+    width: -webkit-fill-available;
+    overflow-x: hidden;
+  }
+  
+  /*changes layout width added by sharif*/
+  @media (min-width: 960px) {
+    /* .sideNavWrapper {
+      max-width: 4.5% !important;
+    } */
+    .main-content{
+      max-width: 100% !important;
+      flex-basis: 100% !important;
+    }
+  }
+  /*changes color, padding, margin width added by sharif*/
+  .sideNavBtn,
+  .sideNavBtn > a {
+    padding: 10px 0;
+    margin: 0 10px !important;
+    color: #2e2e38;
+    border-bottom: 5px solid transparent;
+  }
+  /*customize following css added by sharif*/
+  .sideNavBtn:hover,
+  .sideNavBtn:hover > a {
+    border-bottom: 5px solid #ffe600;
+  }
+  
+  .selectedNav {
+    border-bottom: 5px solid #ffe600;
+  }
+  
+  .sideNavBtn .active,
+  .sideNavLink .active {
+    background-color: yellow;
+    color: #000;
+  }
+  
+  .sideNavLink {
+    text-decoration: none;
+  }
+  
+  .sideNavLink:hover {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .sideNav-item{
+    margin-bottom: 20px !important;
+  }
+  
+  .sideNav-item a {
+    display: block;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .sideNav-item.active a,
+  .sideNav-item a:hover {
+    color: #1a1a24;
+    background-color: #ffe600;
+  }
+  /*added new css by sharif*/
+  .sideNav-item a svg{
+    fill: #c4c4cd;
+    width: 44px;
+    height: 44px;
+  }
+  .sideNav-item.active a svg,
+  .sideNav-item a:hover svg{
+    fill: #1a1a24;
+  }
+  .submenu{
+    display: flex;
+    background: #fff;
+    padding-top: 8px;
+  }
+  .main-title{
+    font-size: 23px;
+    font-weight: 600;
+    margin: 25px 0 25px 10px;
+  }
+  .notify span{
+    background-color: #ffe600 !important;
+    color: #1a1a24 !important;
+    font-weight: bold;
+  }
