@@ -1,0 +1,103 @@
+/* App.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+
+  color: white;
+}
+
+.form {
+  background-color: rgb(30, 29, 29);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(213, 138, 138, 0.1);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #0069d9;
+}
+
+.toggle-btn {
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
+
+/* LoginForm.css */
+
+.login-form {
+  width: 4px;
+}
+
+/* apply the shared form styles */
+.login-form form {
+  margin: 0;
+  background-color: black;
+}
+
+.login-form button {
+  width: 100%;
+}
+
+/* SignUpForm.css */
+
+.signup-form {
+  width: 400px;
+  border: 2px solid rgb(238, 231, 231);
+  background-color: black;
+}
+
+/* apply the shared form styles */
+.signup-form form {
+  margin: 0;
+  background-color: black;
+}
+
+.signup-form button {
+  width: 100%;
+}
+
+.leftimage {
+  background-color: aquamarine;
+  bottom: 0;
+}

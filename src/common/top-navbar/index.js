@@ -3,6 +3,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Helper from "./Helper";
 import MenuItems from "./MenuItems";
+import { BellOutlined, LogoutOutlined, UserOutlined } from "@ant-design/icons";
+
+const fontStyles = { color: "black", fontSize: "32px", margin: "10px" };
 
 function TopNavBar(props) {
   const { navOptions } = props;
@@ -25,28 +28,10 @@ function TopNavBar(props) {
         >
           <h1 className="d1">Dashboard</h1>
           <p className="p1">Super-Admin</p>
-          <img
-            style={{ padding: "0.8rem", margin: "20px" }}
-            src="/assets/icons/profile.jpg"
-            alt="profile"
-          />
+          <UserOutlined style={fontStyles} />
+          <BellOutlined style={fontStyles} />
 
-          <img
-            src="/assets/icons/notification.png"
-            alt="notification"
-            style={{
-              height: "3rem",
-              width: "1.5rem",
-              padding: "0.5rem",
-              marginRight: "10px",
-            }}
-          />
-
-          <img
-            src="/assets/icons/icon.png"
-            alt="logout"
-            style={{ height: "50px", width: "30px", marginRight: "20px" }}
-          />
+          <LogoutOutlined style={fontStyles} />
         </div>
 
         {/* header second row (nav links) */}

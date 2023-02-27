@@ -12,7 +12,7 @@ function LeftNavBar() {
           }}
           alt="Company"
           src="/assets/icons/companylogo.png"
-        />{" "}
+        />
       </div>
       <img
         onClick={() => {

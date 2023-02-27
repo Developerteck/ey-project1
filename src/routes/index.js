@@ -18,6 +18,7 @@ import Unitmain from "../component/unit";
 import UnitGroupmain from "../component/unitgroup";
 import Referenlibrarymain from "../component/referencelibrary";
 import Agencymain from "../component/agency";
+import LoginSignupMain from "../component/loginSignup/login";
 
 // import nav options
 import { dashboardnav } from "./navoptions/dashboard";
@@ -54,10 +55,15 @@ const Unit = hoc(Unitmain, true, true, Unitnav);
 const UnitGroup = hoc(UnitGroupmain, true, true, UnitGroupnav);
 const Referenlibrary = hoc(Referenlibrarymain, true, true, Referenlibrarynav);
 const Agency = hoc(Agencymain, true, true, Agencynav);
+const LoginSignup = hoc(LoginSignupMain);
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: LoginSignup,
+  },
+  {
+    path: "/dashboard",
     element: Dashboard,
   },
   {
